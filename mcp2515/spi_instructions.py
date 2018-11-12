@@ -1,0 +1,32 @@
+MCP_WRITE = 0x02
+MCP_READ = 0x03
+MCP_BITMOD = 0x05
+MCP_READ_STATUS = 0xa0
+MCP_RX_STATUS = 0xb0
+MCP_RESET = 0xc0
+
+# These are just the 4 high bits, must be combined with 4 low bits
+# with further instruction
+LOAD_TX_BUFFER = 0x40
+# TX Buffer 0
+LOAD_TXB0SIDH = 0x00
+LOAD_TXB0D0 = 0x01
+# TX Buffer 1
+LOAD_TXB1SIDH = 0x02
+LOAD_TXB1D0 = 0x03
+# TX Buffer 2
+LOAD_TXB2SIDH = 0x04
+LOAD_TXB2D0 = 0x05
+
+RTS = 0x80
+RTS_TXB0 = 0x01
+RTS_TXB1 = 0x02
+RTS_TXB2 = 0x04
+
+READ_RX_BUFFER = 0x90
+# RX Buffer 0
+READ_RXB0SIDH = 0x00
+READ_RXB0D0 = 0x02
+# RX Buffer 1
+READ_RXB1SIDH = 0x04
+READ_RXB1D0 = 0x06
